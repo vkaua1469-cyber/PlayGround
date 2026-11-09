@@ -16,3 +16,11 @@
 - 👤 [Explore the creator's projects](https://go.ondev.store/vkaua1469-cyber).
 - 🌍 [Create with OMGithub](https://go.ondev.store/).
 <!-- omgithub:readme:end -->
+
+## Lume — Guardiã da Noite
+
+Jogo arcade responsivo em português. Arraste a luz para pegar estrelas e escapar dos meteoros; no computador, use as setas ou A/D. Sobreviva com três vidas, acumule pontos e bata seu recorde (salvo localmente no aparelho). O jogo funciona offline depois do primeiro carregamento em um navegador compatível com PWA.
+
+### Publicação na Play Store
+
+O projeto atual é um jogo web/PWA, não um aplicativo Android pronto para envio. Para publicá-lo na Play Store, será necessário empacotá-lo em um app Android (por exemplo, com TWA ou Capacitor), gerar e assinar um Android App Bundle e cumprir os requisitos vigentes do Google Play, incluindo ficha da loja, classificação indicativa, política de privacidade e declarações de segurança de dados. O recorde fica no armazenamento local; não há conta, anúncios nem coleta de dados implementados neste jogo. Teste o pacote em aparelhos reais antes de enviar.

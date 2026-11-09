@@ -1,0 +1,17 @@
+{
+  "id": ".",
+  "name": "Lume — Guardiã da Noite",
+  "short_name": "Lume",
+  "description": "Atravesse a noite, desvie dos meteoros e reúna estrelas neste jogo arcade gratuito.",
+  "lang": "pt-BR",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "orientation": "portrait",
+  "background_color": "#101124",
+  "theme_color": "#101124",
+  "categories": ["game", "arcade"],
+  "icons": [
+    { "src": "icon.svg", "sizes": "any", "type": "image/svg+xml", "purpose": "any maskable" }
+  ]
+}

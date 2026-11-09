@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover, maximum-scale=1, user-scalable=no">
+  <meta name="theme-color" content="#101124">
+  <meta name="description" content="Atravesse a noite, desvie dos meteoros e reúna estrelas em Lume, um jogo arcade gratuito.">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <title>Lume — Guardião da Noite</title>
+  <link rel="manifest" href="manifest.json">
+  <link rel="icon" href="icon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="shell">
+    <header class="topbar">
+      <a class="brand" href="#" aria-label="Lume início"><span class="brand-mark">✦</span><span>LUME</span></a>
+      <div class="top-actions">
+        <button id="soundBtn" class="icon-btn" type="button" aria-label="Ativar som" title="Som">♫</button>
+        <button id="pauseBtn" class="icon-btn" type="button" aria-label="Pausar jogo" title="Pausar" disabled>Ⅱ</button>
+      </div>
+    </header>
+
+    <section class="game-wrap" aria-label="Jogo Lume">
+      <div class="hud" aria-live="polite">
+        <div class="hud-card score-card"><span class="hud-label">PONTOS</span><strong id="score">0000</strong></div>
+        <div class="hud-center"><span class="level-label">NOITE <b id="level">01</b></span><div class="lives" id="lives" aria-label="3 vidas">♥ ♥ ♥</div></div>
+        <div class="hud-card best-card"><span class="hud-label">RECORDE</span><strong id="best">0000</strong></div>
+      </div>
+      <canvas id="game" aria-label="Desvie dos meteoros e pegue as estrelas" role="img"></canvas>
+
+      <section id="welcome" class="overlay welcome" aria-labelledby="game-title">
+        <div class="intro-content">
+          <div class="eyebrow"><span></span> UMA AVENTURA ARCADE</div>
+          <div class="hero-icon" aria-hidden="true"><i></i><b>✦</b></div>
+          <h1 id="game-title">Guardiã<br>da <em>Noite</em></h1>
+          <p>Uma pequena luz. Um céu infinito.<br>Quanto tempo você consegue brilhar?</p>
+          <button id="startBtn" class="primary-btn" type="button">COMEÇAR <span>→</span></button>
+          <div class="howto"><span class="finger">☝</span><span>Arraste para mover<br><small>Recolha estrelas · desvie dos meteoros</small></span></div>
+        </div>
+        <span class="corner-note">FEITO PARA BRILHAR ✧</span>
+      </section>
+
+      <section id="pauseOverlay" class="overlay modal" hidden>
+        <div class="modal-card"><span class="modal-symbol">Ⅱ</span><h2>PAUSA</h2><p>O céu pode esperar.</p><button id="resumeBtn" class="primary-btn" type="button">CONTINUAR <span>→</span></button></div>
+      </section>
+
+      <section id="gameOver" class="overlay modal" hidden>
+        <div class="modal-card"><span class="modal-symbol star-symbol">✦</span><div class="eyebrow">A NOITE TERMINOU</div><h2>VOCÊ BRILHOU</h2><p class="result-line">Sua pontuação <strong id="finalScore">0</strong></p><p id="recordMessage" class="record-message"></p><button id="restartBtn" class="primary-btn" type="button">TENTAR DE NOVO <span>→</span></button></div>
+      </section>
+    </section>
+    <footer class="footer"><span>DESLIZE PARA GUIAR <i>✦</i> SOBREVIVA À NOITE</span><span class="footer-right">LUME <b>·</b> 2026</span></footer>
+  </main>
+  <script src="game.js" defer></script>
+</body>
+</html>
